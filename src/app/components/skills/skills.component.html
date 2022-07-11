@@ -1,0 +1,40 @@
+<div>
+  <br><br>
+  <ion-text color="primary">
+    <h1>
+      <ion-icon size="large" name="stats-chart"></ion-icon>
+      SKILLS
+    </h1>
+  </ion-text>
+  <ion-card color="primary">
+    <ion-card-content>
+      <ion-row>
+
+        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="6" size-xl="6">
+          <ion-text color="dark">
+            <h2 class="languages">Languages/Frameworks</h2>
+          </ion-text>
+          <br><br>
+          <div *ngFor="let item of languages_frameworks" class="ion-text-start">
+            <ion-label color="dark">{{item.name}}</ion-label>
+            <ion-progress-bar color="dark" value="{{item.value}}"></ion-progress-bar>
+            <br>
+          </div>
+        </ion-col>
+
+        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="6" size-xl="6">
+          <ion-text color="dark">
+            <h2 class="languages">Softwares/Services</h2>
+          </ion-text>
+          <br><br>
+          <div *ngFor="let item of softwares" class="ion-text-start">
+            <ion-label color="dark">{{item.name}}</ion-label>
+            <ion-progress-bar color="dark" value="{{item.value}}"></ion-progress-bar>
+            <br>
+          </div>
+        </ion-col>
+
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</div>

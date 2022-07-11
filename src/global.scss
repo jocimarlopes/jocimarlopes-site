@@ -24,3 +24,59 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url(assets/fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: Raleway-Light;
+    src: url(assets/fonts/Raleway-Light.ttf);
+}
+@font-face {
+    font-family: Raleway-Thin;
+    src: url(assets/fonts/Raleway-Thin.ttf);
+}
+* {
+    text-decoration: none;
+    font-family: Raleway-Light;
+}
+h1 {
+    font-family: Raleway-SemiBold;
+}
+h2 {
+    font-family: Raleway-SemiBold;
+}
+h5 {
+    font-family: Raleway-Thin;
+}
+ion-card {
+    --background: var(--ion-color-dark)
+}
+.content-bg {
+    --background: url("./assets/background.png") no-repeat bottom center scroll !important;
+    background-color: var(--ion-color-dark);
+}
+.line {
+    width: 3%;
+    background-color: var(--ion-color-primary);
+    height: 103%;
+    margin: 0 auto;
+}
+.line-end {
+    width: 3%;
+    background-color: var(--ion-color-primary);
+    height: 52%;
+    margin: 0 auto;
+}
+.ball {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: -8px;
+    background-color: var(--ion-color-secondary);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
