@@ -1,14 +1,17 @@
-<ion-content class="ion-text-center content-bg"[fullscreen]="true">
+<ion-content 
+[scrollEvents]="true" class="ion-text-center content-bg"[fullscreen]="true">
   <ion-row>
     <ion-col size-lg="3" size-xl="3"></ion-col>
     <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="6" size-xl="6">
 
-      <ion-avatar class="avatar">
-        <img class="profile" src="assets/profile.jpg">
+      <ion-avatar id="home" class="avatar">
+        <img class="profile" src="assets/profile.png">
       </ion-avatar>
+      
       <ion-text color="secondary">
         <h1>JOCIMAR LOPES</h1>
       </ion-text>
+
       <ion-text color="light">
         <h5>Mobile | Full-Stack</h5>
         <h5>Developer</h5>
@@ -18,17 +21,34 @@
 
       <about class="margin"></about>
 
-      <education class="margin"></education>
+      <education id="education" class="margin"></education>
 
-      <skills class="margin"></skills>
+      <skills id="skills" class="margin"></skills>
 
-      <experience class="margin"></experience>
+      <experience id="experience" class="margin"></experience>
 
-      <interests class="margin"></interests>
+      <interests id="interests" class="margin"></interests>
+
+      <apps id="apps" class="margin"></apps> 
 
       <footer class="margin"></footer>
       
     </ion-col>
     <ion-col size-lg="3" size-xl="3"></ion-col>
   </ion-row>
+
+  <div class="menu">
+    <ion-fab vertical="center" horizontal="center" slot="fixed">
+      <ion-fab-button size="small">
+        <ion-icon color="dark" name="aperture"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="end">
+        <ion-list class="lista-menu">
+          <ion-fab-button size="small" *ngFor="let item of menuList" (click)="scrollToLabel(item.id)" color="primary">
+            <ion-icon size="large" color="dark" name="{{item.icon}}"></ion-icon>
+          </ion-fab-button>
+        </ion-list>
+      </ion-fab-list>
+    </ion-fab>
+  </div>
 </ion-content>

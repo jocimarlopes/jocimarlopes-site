@@ -11,3 +11,15 @@
         margin: auto;
     }
 }
+.menu {
+    position: fixed;
+    left: 7%;
+    top: 50%;
+}
+.lista-menu {
+    background-color: transparent !important;
+    margin-top: -225%;
+    ion-fab-button {
+        margin-bottom: 5px;
+    }
+}

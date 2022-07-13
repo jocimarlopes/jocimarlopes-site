@@ -1,0 +1,32 @@
+<div>
+  <br><br>
+  <ion-text color="primary">
+    <h1>
+      <ion-icon size="large" name="logo-android"></ion-icon>
+      APPS/PLAY STORE
+    </h1>
+  </ion-text>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-card *ngFor="let item of apps">
+        <a target="_blank" href="{{item.url}}">
+          <ion-row>
+            <ion-col size="4">
+              <img class="app" src="assets/apps/{{item.image}}">
+            </ion-col>
+            <ion-col size="8">
+              <ion-text>
+                <h1>{{item.name}}</h1>
+              </ion-text>
+              <ion-text color="secondary">
+                <h5>{{item.description}}</h5>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+        </a>
+      </ion-card>
+    </ion-card-content>
+  </ion-card>
+
+</div>

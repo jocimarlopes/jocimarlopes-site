@@ -8,6 +8,7 @@ import { SkillsComponent } from "./skills/skills.component";
 import { FooterComponent } from "./footer/footer.component";
 import { ExperienceComponent } from "./experience/experience.component";
 import { InterestsComponent } from "./interests/interests.component";
+import { AppsComponent } from "./apps/apps.component";
 
 @NgModule({
     declarations: [HeaderComponent, 
@@ -16,7 +17,8 @@ import { InterestsComponent } from "./interests/interests.component";
         SkillsComponent, 
         FooterComponent, 
         ExperienceComponent,
-        InterestsComponent
+        InterestsComponent,
+        AppsComponent
     ],
     imports: [IonicModule, 
         CommonModule],
@@ -26,7 +28,8 @@ import { InterestsComponent } from "./interests/interests.component";
         SkillsComponent, 
         FooterComponent, 
         ExperienceComponent,
-        InterestsComponent
+        InterestsComponent,
+        AppsComponent
     ]
 })
 
