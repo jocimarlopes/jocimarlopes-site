@@ -16,7 +16,7 @@ export class AppsComponent implements OnInit {
       { 
         name: 'Jogador Caro', 
         image: 'jogadorcaro.webp', 
-        url: 'https://play.google.com/store/apps/details?id=br.com.jogadorcaro',
+        url: 'https://jogadorcaro.digital',
         description: 'Jogador Caro is a Brazilian social network, the idea of connecting players, teams and soccer courts.'
       },
       { 

@@ -9,24 +9,23 @@
 
   <ion-card>
     <ion-card-content>
-      <ion-card *ngFor="let item of apps">
-        <a target="_blank" href="{{item.url}}">
-          <ion-row>
-            <ion-col size="4">
+      <ion-row>
+        <ion-col size-xs="6" size-sm="6" size-md="6" size-lg="3" size-xl="3" *ngFor="let item of apps">
+          <a target="_blank" href="{{item.url}}">
+            <ion-card class="card-app">
               <img class="app" src="assets/apps/{{item.image}}">
-            </ion-col>
-            <ion-col size="8">
-              <ion-text>
-                <h1>{{item.name}}</h1>
-              </ion-text>
-              <ion-text color="secondary">
-                <h5>{{item.description}}</h5>
-              </ion-text>
-            </ion-col>
-          </ion-row>
-        </a>
-      </ion-card>
+              <ion-card-content>
+                <ion-text>
+                  <h1>{{item.name}}</h1>
+                </ion-text>
+                <ion-text color="secondary">
+                  <h5>{{item.description}}</h5>
+                </ion-text>
+              </ion-card-content>
+            </ion-card>
+          </a>
+        </ion-col>
+      </ion-row>
     </ion-card-content>
   </ion-card>
-
 </div>
